@@ -33,7 +33,7 @@
  .chatbot {
      position: fixed;
      left: 50%;
-     top: 45%;
+     top: 50%;
      width: 800px;
      overflow: hidden;
      background: #161616;
