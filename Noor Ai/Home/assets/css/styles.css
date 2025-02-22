@@ -179,6 +179,7 @@ button {
   cursor: pointer;
 }
 
+
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
