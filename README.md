@@ -1,6 +1,6 @@
 # Noor Ai
 
-This project was generated & powered by the Gemini API.
+Meet NoorAI, a smart and intuitive chatbot currently in its beta phase. Designed to simplify your digital interactions, NoorAI offers a glimpse into the future of AI-powered conversations. While still evolving, this chatbot is already helping users explore smarter, faster, and more engaging ways to communicate. Join us in testing and shaping NoorAI as we work toward creating a seamless and innovative chatbot experience.
 
 <h2>Home Page</h2>
 
