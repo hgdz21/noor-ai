@@ -4,6 +4,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const chatbox = document.querySelector(".chatbox");
     const chatbotToggler = document.querySelector(".chatbot-toggler");
     const chatbotCloseBtn = document.querySelector(".close-btn");
+    
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const navToggle = document.getElementById('nav-toggle');
+        const sidebar = document.querySelector('.sidebar');
+    
+        navToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+            document.body.classList.toggle('sidebar-active');
+        });
+    });
+
 
     if (chatInput && sendChatBtn && chatbox) {
         let userMessage;
@@ -13,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const createChatLi = (message, className) => {
             const chatLi = document.createElement("li");
             chatLi.classList.add("chat", className);
-            let chatContent = className === "outgoing" ? `<p></p>` : `<span class="material-symbols-outlined">smart_toy</span><p></p>`;
+            let chatContent = className === "outgoing" ? `<p></p>` : `<span><img src="assets/img/Original Star.png" alt="" class="chat__logo__img"></span><p></p>`;
             chatLi.innerHTML = chatContent;
             chatLi.querySelector("p").textContent = message;
             return chatLi;
@@ -72,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         chatInput.addEventListener("keydown", (e) => {
-            if(e.key === "Enter" && !e.shiftKey) {
+            if (e.key === "Enter" && !e.shiftKey) {
                 e.preventDefault();
                 handleChat();
             }
