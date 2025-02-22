@@ -4,18 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const chatbox = document.querySelector(".chatbox");
     const chatbotToggler = document.querySelector(".chatbot-toggler");
     const chatbotCloseBtn = document.querySelector(".close-btn");
-    
-
-    document.addEventListener('DOMContentLoaded', () => {
-        const navToggle = document.getElementById('nav-toggle');
-        const sidebar = document.querySelector('.sidebar');
-    
-        navToggle.addEventListener('click', () => {
-            sidebar.classList.toggle('active');
-            document.body.classList.toggle('sidebar-active');
-        });
-    });
-
 
     if (chatInput && sendChatBtn && chatbox) {
         let userMessage;
@@ -88,6 +76,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 e.preventDefault();
                 handleChat();
             }
+        });
+
+        sendChatBtn.addEventListener("click", () => {
+            console.log("Send button clicked");
+            handleChat();
         });
 
         chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
