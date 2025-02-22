@@ -7,8 +7,8 @@
 
   /*========== Colors ==========*/
   --hue: 14;
-  --first-color: #16a6fb;
-  --first-color-alt: #004f7c;
+  --first-color: #fc7d00;
+  --first-color-alt: #e6c000;
   --title-color: hsl(var(--hue), 4%, 100%);
   --text-color: hsl(var(--hue), 4%, 85%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
