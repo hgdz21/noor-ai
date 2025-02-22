@@ -48,27 +48,26 @@
  }
 
  .chatbot {
-     position: fixed;
-     right: 40px;
-     bottom: 100px;
-     width: 420px;
-     overflow: hidden;
-     background: #fff;
-     border-radius: 15px;
-     box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
-         0 32px 64px -48px rgba(0, 0, 0, 0.5);
-     transform: scale(0.5);
-     transform-origin: bottom right;
-     opacity: 0;
-     transition: all 0.1s ease;
- }
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 420px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+        0 32px 64px -48px rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+    transition: all 0.1s ease;
+    z-index: 1000; /* Ensure the chatbot is on top */
+}
 
- .show-chatbot .chatbot {
-     transform: scale(1);
-     opacity: 1;
-     pointer-events: auto;
- }
-
+.show-chatbot .chatbot {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    pointer-events: auto;
+}
  .chatbot header {
      background: #724ae8;
      padding: 16px 0;
